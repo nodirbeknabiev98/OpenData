@@ -1,0 +1,8 @@
+<div class="section-container">
+    <h2>Control Cards</h2>
+    <div class="card-deck servers">
+        <div *ngFor="let server of servers">
+            <app-server (serverAction) = "updateServer($event)"  [inputToServerComponent] = "server"></app-server>
+        </div>
+    </div>
+</div>

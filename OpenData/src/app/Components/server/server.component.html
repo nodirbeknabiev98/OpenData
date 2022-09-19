@@ -1,0 +1,10 @@
+<div class="card mb-3 shadow block-status" [ngStyle] = "{'background-color' :color}">
+    <div class="card-header name">
+       {{inputToServerComponent.name}}
+    </div>
+    <div class="card-body status">
+        {{serverStatus}}
+        <button (click) = "sendServerAction(inputToServerComponent.isOnline)" class="btn btn-default action">{{buttonText}}</button>
+    </div>
+
+</div>

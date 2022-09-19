@@ -1,0 +1,39 @@
+
+.logo-main{
+    
+display: flex;
+gap:0.4rem;
+
+}
+
+.logo{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+.logo-left{
+    
+    padding: 3px 5px 3px 8px;
+    border-radius: 4px;
+}
+
+
+.logo-right{
+    background-color: #ff6b6b;
+    padding: 3px 8px 3px 3px;
+    margin-left: -4px;
+    border-radius: 4px;
+}
+
+.image{
+    padding-top:0.5rem;
+
+}
+
+img {
+    width: 2rem;
+    height: 2rem;
+    
+}
+

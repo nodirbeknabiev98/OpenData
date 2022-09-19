@@ -1,0 +1,12 @@
+<div class="chart">
+    <canvas baseChart
+    *ngIf = 'this.pieChartDatasets[0].data.length > 0'
+  [type]="'pie'"
+  [datasets]="pieChartDatasets"
+  [labels]="pieChartLabels"
+  [options]="pieChartOptions"
+  [plugins]="pieChartPlugins"
+  [legend]="pieChartLegend">
+</canvas>
+</div>
+

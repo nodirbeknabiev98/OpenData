@@ -1,0 +1,28 @@
+#second-container{
+    padding-top: 1.5rem;
+}
+
+#headOfLineChart{
+    display: flex;
+    gap:1rem;
+}
+
+#headOfLineChart .howManyOrdersButton{
+    display: flex;
+    gap:0.5rem; 
+    padding-left: 44rem;
+}
+
+#headOfLineChart .howManyOrdersButton input{
+    background-color: #7380ec;
+    border-radius: 5px;
+    color: #ffffff;
+    border: none;
+}
+
+#headOfLineChart .howManyOrdersButton button{
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color:#ffbb55;
+}

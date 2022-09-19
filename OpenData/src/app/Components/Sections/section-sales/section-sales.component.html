@@ -1,0 +1,56 @@
+<div class="section-container">
+
+    <div id="first-container">
+        <div class="row-fluid cards">
+            <div class="card shadow card-theme">
+                <div class="card-header card-header theme">
+                    <div id = "headOfLineChart">
+                        <div class="headerName">  
+                            <h5>Top 3 Customers By Num Of Orders</h5>
+                        </div>
+                        <div class= "howManyOrdersButton">    
+                            <label for="quantity">Number of orders considered:  </label>
+                            <input #inputTag type="number"  id="quantity" name="quantity" value="100" min="3" max ="1000">  
+                            <button (click) = "customize(inputTag.value)"  type="button" for='quantity'>Customize</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <app-line-chart [inputToLineChartComp] = "numOfOrders"></app-line-chart>
+                </div>
+            </div>
+        </div>
+    </div>    
+
+    <div id="second-container">
+        <div class="row-fluid cards">
+            <div class="card-deck">
+                <div class="card mb-3 shadow card-theme">
+                    <div class="card-header card-header-theme">
+                        <h5> Daily Orders </h5>
+                    </div>
+                    <div class="card-body">
+                        <app-bar-chart></app-bar-chart>
+                    </div>
+                </div>
+                <div class="card mb-3 shadow card-theme">
+                    <div class="card-header card-header-theme">
+                        <h5> Orders by Customer</h5>
+                    </div>
+                    <div class="card-body">
+                        <app-pie-chart></app-pie-chart>
+                    </div>
+                </div> 
+                <div class="card mb-3 shadow card-theme">
+                    <div class="card-header card-header-theme">
+                        <h5> Orders by State</h5>
+                    </div>
+                    <div class="card-body">
+                        <app-doughnut-chart></app-doughnut-chart>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
